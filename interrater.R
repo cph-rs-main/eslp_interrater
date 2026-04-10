@@ -22,16 +22,14 @@ START_ROW <- 1      # Change to your desired starting row
 END_ROW <- NULL     # Change to your desired ending row, or keep NULL for all rows
 # ============================================================
 
-# Read data
-df <- read.csv(FILENAME)
+# READ FILE - Pick ONE (comment out the other): 
+# Above reads csv, below reads excel
+df <- read_csv(FILENAME, show_col_types = FALSE) %>% as.data.frame()
+# df <- read_excel(FILENAME) %>% as.data.frame()
 
-# Convert to matrix and transpose if raters are in rows
-# Note: irrCAC usually expects raters as columns, subjects as rows
-# data <- as.matrix(t(data))
-
-# Subset rows if specified (with validation)
+# Subset rows if specified
 if (!is.null(START_ROW)) {
-  end_row <- ifelse(is.null(END_ROW), nrow(df), min(END_ROW, nrow(df)))
+  end_row <- ifelse(is.null(END_ROW), nrow(df), END_ROW)
   df <- df[START_ROW:end_row, ]
 }
 
