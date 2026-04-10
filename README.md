@@ -32,8 +32,10 @@ agreement coefficients for ordinal data.
 ### ✍️ References
 
 Zhao, X., Liu. J.S., & Deng, K. (2013). Assumptions behind Intercoder Reliability Indices. Annals of the International Communication Association. 36. 10.1080/23808985.2013.11679142. 
+
 Zhao X.,, Feng, G.C., Liu, J.S.,  & Deng, K. (2018). We Agreed to Measure Agreement –
 Redefining Reliability De-justifies Krippendorff’s Alpha. China Media Research, 14(2):1-15
+
 Zhao, Y. J., Feng, G.C., Li, D M., Ao, S. H., Li, M. M., Tuo, Z. T., Huang, H., Deng, K., & Zhao, X. (2024). Liberal-conservative hierarchies of intercoder reliability estimators. arXiv preprint arXiv:2410.05291.
 
 
