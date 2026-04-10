@@ -16,17 +16,26 @@ You can do a git clone if you are able to do so.
 ## ℹ️ Overview
 
 Gwet's (2002, 2008) AC values have been chosen for the main indices. 
-As compared to Krippendorff's Alpha, Gwet's AC1 is less sensitive to 
-the number of raters and categories, making it more robust for 
-inter-rater reliability analysis with multiple coders.
+The Krippendorff's Alpha tends to provide inconsistent alpha values according to Zhao et al. (2013, 2018) when 
+- distribution is skewed
+- sample becomes larger
+- data variation becomes smaller
+- specificity or sensitivity becomes lower 
+The KA has been criticized to be unreliable (Zhao et al., 2024).
+
+The Gwet's AC2 in specific has been chosen for this project, because the Gwet AC allows 2 or more raters on an ordinal scale. 
 
 This script uses the `irrCAC` package to compute chance-corrected 
 agreement coefficients for ordinal data.
 
 
-### ✍️ Authors
+### ✍️ References
 
-[Mention who you are and link to your GitHub or organization's website]
+Zhao, X., Liu. J.S., & Deng, K. (2013). Assumptions behind Intercoder Reliability Indices. Annals of the International Communication Association. 36. 10.1080/23808985.2013.11679142. 
+Zhao X.,, Feng, G.C., Liu, J.S.,  & Deng, K. (2018). We Agreed to Measure Agreement –
+Redefining Reliability De-justifies Krippendorff’s Alpha. China Media Research, 14(2):1-15
+Zhao, Y. J., Feng, G.C., Li, D M., Ao, S. H., Li, M. M., Tuo, Z. T., Huang, H., Deng, K., & Zhao, X. (2024). Liberal-conservative hierarchies of intercoder reliability estimators. arXiv preprint arXiv:2410.05291.
+
 
 
 ## 🚀 Usage
@@ -34,14 +43,14 @@ agreement coefficients for ordinal data.
 Configure your data range and file path in the USER SETTINGS section:
 
 ```r
-# File path - supports CSV or Excel
-FILENAME &lt;- "C://XXX//XXX//DATA.csv"
-# FILENAME &lt;- "C://XXX//XXX//DATA.xlsx"  # Uncomment for Excel
+# File path - supports CSV or Excel. Please input the path of where your file is down here. 
+FILENAME <- "C://XXX//XXX//DATA.csv"
+# FILENAME <- "C://XXX//XXX//DATA.xlsx"  # Uncomment for Excel
 
 # ROW range (inclusive) - Set to NULL to use all rows
-START_ROW &lt;- 1      # Change to your desired starting row
-END_ROW &lt;- NULL     # Change to your desired ending row, or keep NULL for all rows
+START_ROW <- 1      # Change to your desired starting row
+END_ROW <- NULL     # Change to your desired ending row, or keep NULL for all rows
 
 # COLUMN range (inclusive)
-START_COL &lt;- 2      # Change to your desired starting column (exclude ID columns)
-END_COL &lt;- 9        # Change to your desired ending column
+START_COL <- 2      # Change to your desired starting column (exclude ID columns)
+END_COL <- 9        # Change to your desired ending column
