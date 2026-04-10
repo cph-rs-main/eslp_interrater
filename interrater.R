@@ -14,8 +14,8 @@ library(irrCAC)
 FILENAME <- "C://XXX//XXX//DATA.csv"
 
 # COLUMN range (inclusive)
-START_COL <- 2
-END_COL <- 9
+START_COL <- 2 # Change to your desired starting column (exclude question number)
+END_COL <- 9 # Change to your desired ending column
 
 # ROW range (inclusive) - Set to NULL to use all rows
 START_ROW <- 1      # Change to your desired starting row
