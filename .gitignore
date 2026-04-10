@@ -1,0 +1,10 @@
+# renv directories (large, auto-generated)
+renv/library/
+renv/local/
+renv/staging/
+renv/sandbox/
+
+# Optional: RStudio and session files
+.Rproj.user/
+.Rhistory
+.RData
